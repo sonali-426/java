@@ -1,0 +1,39 @@
+class helloworld{
+    public static void main(string[]args){
+        System.out.println("hello world");
+    }
+}
+    
+
+    EXPLANATION :
+
+public :
+       It is a keyword.
+       Also known as access modifier (it tells the visibility & is visible to all i.e accessible.)    
+
+class  :
+        It isa keyword.
+        Used to declare a class.
+
+{}  :
+     Used to declare a class.       
+
+static :
+        Is a keyword.
+        We declare a function using this keyword.
+        When we use keyword we don't need to create an object.
+        If any function is static it is created by JVM.
+        Saves memory.
+
+void :
+       To specicy that a method doesn't return anything.
+
+main :
+       It is a function.
+       Represents the starting point of a program.
+
+string args[] :
+                It is an array of character data type.
+
+;  :
+     Known as line terminator.                                          

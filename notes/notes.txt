@@ -1,0 +1,2 @@
+javac --version : to check compiler's version.
+java --version : to check it's version.

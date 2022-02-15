@@ -1,0 +1,8 @@
+To compiler using command prompt :
+
+Step 1 - javac <filename> 
+step 2 - filename.class //it is our bytecode & is created directly .We do not not have to write this command.
+step 3 - java <filename>  //to execute.
+
+
+Note : The extensoin of byte code file is - .class
