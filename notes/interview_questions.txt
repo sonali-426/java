@@ -1,0 +1,152 @@
+To compiler using command prompt :
+
+Step 1 - javac <filename> 
+step 2 - filename.class //it is our bytecode & is created directly .We do not not have to write this command.
+step 3 - java <filename>  //to execute.
+
+
+Note : The extensoin of byte code file is - .class
+
+
+
+What is role of "public static void main (String [] args)" in Java programming?
+
+
+Every language has its function which tells the compiler from where the compiler has to 
+start executing its program like in C programming language there is int main() function,
+ same as C programming language we have public static void main (String [] args) in JAVA.
+
+public- It is an Access modifier, which specifies from where and who can access the method.
+ Making the main() method public makes it globally available. It is made public so that JVM can
+  invoke it from outside the class as it is not present in the current class. public keyword is
+   accessible anywhere within any java project.
+
+Static-It is a keyword which is when associated with a method, makes it a class related method. 
+The main() method is static so that JVM can invoke it without instantiating the class. This also
+ saves the unnecessary wastage of memory which would have been used by the object declared only
+  for calling the main() method by the JVM.
+
+void- Void is a keyword which ensures that the function is not returning anything ,it’s return 
+type is void As soon as the main() method terminates, the java program terminates too. 
+Hence, it doesn’t make any sense to return from main() method as JVM can’t do anything with 
+the return value of it.
+
+main- main is a name is java which tells the compiler that you have to start from here, in 
+others words we can say starting point f execution of program.
+
+String[] args- Looking the whole statement its looks like this a function which take some
+ input in the parenthesis of main that we called as String[] args It stores Java command 
+ line arguments and is an array of type java.lang.String class. Here, the name of 
+ the String array is args but it is not fixed and user can use any name in place of it
+
+
+
+
+ Why is String args [] compulsory in main method in Java?
+
+When you run a Java program from a command line, you are allowed to pass data 
+into that program as 'comnand line arguments'.
+
+Your Java program will run from a main method, and the arguments you typed on the
+ command line will appear to the Java program as Strings in that array.
+
+
+
+
+
+ What is an object and why do we create an object in java?
+
+
+Trying a Simple way to explain about the Object created for a Class.
+
+Class (consider as A) is like a closed Room with many things inside.
+You are an outsider (from Class B), wanting to access something(METHODS) from the class A.
+You wont be able to directly access anything in a room(A) as there is no way to go inside .
+ What you need is a way to go inside the room to access the compents (Methods).
+So we have to create a door (OBJECT) to that room.
+The created Door (OBJECT) is especially for you. Only you can use the door (OBJECT). 
+No person from other Room (CLASS) can access through the Door (OBJECT) created by you.
+ He has to create his own Door (OBJECT).
+If you are already inside the room A, you dont need a door to access the things inside
+ the room where you are in. i.e., To access a Method in a class from whithin the class itself, 
+ you dont have to create a object(door). You can directly access the things (METHODS) by its name.
+
+P.S: There are ways to create only one object to a class (SINGLETON). 
+You can get to know about that while studying in detail.
+
+
+
+
+Why do Java programs start from only main (string args[]) method?
+
+
+Originally Answered: Why do java program starts from only main (String args[]) method?
+Ok, lets look at this the other way around. Lets take an example.
+
+There is a house and you want to enter to visit your friend. What would you do? 
+You will look for the entrance gate to enter the house. Also, you are carrying a gift
+ for your friend.
+In similar way, a program is like a house. When the program is needed to be executed,
+ the system looks for the main entrance i.e. the main method public static void main(String[] args) 
+ to enter into the program and execute it. The String[] args acts as a container which 
+ can contain data (i.e. the gift item) which is to be delivered to the program (i.e house) 
+ and program can take this data for further use
+
+
+
+
+ What exactly is the use of String [] args in Java?
+
+
+It simply means that you can pass the run-time command line arguments of type String to 
+the main method in Java, args contains the supplied command-line arguments as an array of 
+String objects.
+
+
+
+
+
+Why is the main method in Java important?
+
+
+Main Method is very important to start our code Execution , when we start writing code then we have write first line “public static void main (String Args[])” , This is only because java compiler don’t Understand any thing excluding Main method and as soon as compiler get this method they it start execution in normal flow , Directly say , if you will not write this main method in your code then your code will never be compiled and throws Exception Like ,
+
+Error: Main method not found in class Simple, please define the main method as:
+public static void main(String[] args)
+
+So you have to define main method in your code .
+
+Its not Enough to write only main method in your code , you have to understand the syntax and terms which should be in your main method .
+
+“public static void main (String Args[])”
+
+public :- public is modifier which used here to provide accessibility to the method so that it can be access any where from you system .
+
+static :- static is keyword which is very important to write in your code in main method , The main() method Java are static because they can then be invoked by the run time engine without having to instantiate an instance of the parent class.
+
+void :- void is return type it is used because if there is another return type like int , float etc then is returned value really worth it for compiler , never , the returned value does’t use by compiler that’s why main method return type is void .
+
+main:- main is the predefined name of the method which is fixed .
+
+String args[] :- This is String Array which is used to store the value which is provide command line by user.
+
+following are syntax which is normally used when we write java code ,
+
+Valid java main method syntax :-
+
+public static void main(String[] args)
+public static void main(String []args)
+public static void main(String args[])
+public static void main(String... args)
+static public void main(String[] args)
+public static final void main(String[] args)
+final public static void main(String[] args)
+final strictfp public static void main(String[] args)
+
+
+
+
+What is args in (String [] args)? What does args stand for?
+
+arguments to the method. This method must be given an array of Strings, 
+and the array will be called 'args .

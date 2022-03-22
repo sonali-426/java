@@ -14,7 +14,7 @@ public class ques1 {
             System.out.println(" it is positive");
         }
         
-        
-    }
+    } 
     
-}
+}  
+
